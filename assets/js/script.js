@@ -37,7 +37,7 @@
 
   function downloadFile(filename) {
     // Construct the file path for the download
-    const filePath = `../files/${filename}`;
+    const filePath = `../assets/files/${filename}`;
   
     // Create a temporary link element
     const link = document.createElement('a');
@@ -56,7 +56,7 @@
   
   function viewFile(filename) {
     // Construct the file path for the view
-    const filePath = `../files/${filename}`;
+    const filePath = `../assets/files/${filename}`;
   
     // Open the file in a new window or tab
     window.open(filePath, '_blank');
