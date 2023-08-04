@@ -22,17 +22,18 @@
     });
   });
 */
-  function myFunction(hiddenDiv) {
-    
-    var x = document.getElementById(hiddenDiv);
-    console.log(x)
-    if (x.style.display === "none") {
-     
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+function myFunction(hiddenDiv) {
+  var x = document.getElementById(hiddenDiv);
+  
+  if (x.classList.contains('pop')) {
+    x.classList.remove('pop');
+  } else {
+    x.classList.add('pop');
   }
+}
+
+
+
 
 
   function downloadFile(filename) {
@@ -62,5 +63,12 @@
     window.open(filePath, '_blank');
   }
   
-  
 
+
+
+  const mobileNavToggle = document.querySelector(".mobile-nav-toggle-ham");
+  const header = document.getElementById("header");
+  
+  mobileNavToggle.addEventListener("click", () => {
+    header.classList.toggle("mobile-nav-active");
+  });
