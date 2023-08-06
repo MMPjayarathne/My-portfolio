@@ -72,3 +72,12 @@ function myFunction(hiddenDiv) {
   mobileNavToggle.addEventListener("click", () => {
     header.classList.toggle("mobile-nav-active");
   });
+
+
+  //js for the hamburgur menu
+  function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+
+  }
