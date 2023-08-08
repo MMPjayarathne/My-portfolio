@@ -184,9 +184,20 @@ body {
 
 
   .ham {
+    width: 100%;
+    background-color: #ffffff;
     position: fixed;
     z-index: 1000; /* Ensure the hamburger menu is above other elements */
   }
+  .main-bar{
+    background-color: #000;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    
+  }
+
   
   .menu-bg {
     position: fixed;
@@ -195,7 +206,6 @@ body {
 
   .menu-bar,
   .nav{
-
     position: fixed;
     z-index: 999; 
 
@@ -205,13 +215,15 @@ body {
   #menu-bar {
     width: 30px;
     height: 25px;
+    top: 20px;
+    left: 20px;
     cursor: pointer;
   }
   
   .bar {
     height: 5px;
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -233,7 +245,7 @@ body {
     float: left;
     text-align: left;
     border-radius: 5px;
-    top: 20px;
+    top: 30px;
    
     padding: 5px 0;
   }
