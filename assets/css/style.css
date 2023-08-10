@@ -720,7 +720,7 @@ body {
 
   .pop{
     opacity: 1;
-    height: 500px; /* Set a default height that's larger than 0 */
+    height: 550px; /* Set a default height that's larger than 0 */
   
     transition: opacity 1s linear, height 1s linear;
   }
